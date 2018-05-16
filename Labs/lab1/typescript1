@@ -1,0 +1,40 @@
+Script started on Mon 24 Aug 2015 02:42:15 PM EDT
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[?1034h[sony_bp@cobra lab1]$ car [K[K [Kt Prog1.java
+
+import java.util.*;
+
+//  Lab program 1
+//  This program reads integers and stops when 0 is read.
+//  It will print the product of all the integers before the 0.
+
+//  The program contains no error handling.
+
+public class Prog1 
+{
+	public static void main (String[] args)
+	{
+   		int Product = 1;
+   		int value;
+                Scanner stdin = new Scanner(System.in);
+		value = stdin.nextInt();
+
+   		while (value != 0)
+   		{
+      			Product *= value;
+		        value = stdin.nextInt();
+   		}
+
+   		System.out.println("The product is "  + Product);
+
+		System.exit(0);
+	}
+}
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ javac [K[K[K[K[K[Kclar[Ke[K[Kear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ javac Progq[K1.java
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ java Prog1 < data1.dat
+The product is -3628800
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ exit
+exit
+
+Script done on Mon 24 Aug 2015 02:42:44 PM EDT

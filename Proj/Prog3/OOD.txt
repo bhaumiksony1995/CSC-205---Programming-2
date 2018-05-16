@@ -1,0 +1,37 @@
+***implements serializable(interface for using binary files)
+3 CLASSES TOTAL
+-Employee(abstract)
+	-name
+	-wage
+	-computePay
+	-raise
+	-newEmployee
+	-print
+	-download
+	-upload
+-hourlyEmployee
+	-methods(some overriden)
+	-attributes
+-salaryEmployee
+	-attributes
+
+
+-Employee class
+	-name + wage as attributes
+	-double wage
+	-constructor with two parameters
+	-abstract method for compute pay 
+	-increase wage method(raise)
+	-getters and setters
+		-get.name()
+		-get.wage()
+	
+-hourlyEmployee
+	-constructor that sends of 2 parameters via super
+	-body for computePay()
+	-also contains to.String()
+
+-SalariedEmployee
+	-constructor with 2 parameters
+	-body for computePay()
+	-also contains to.String()

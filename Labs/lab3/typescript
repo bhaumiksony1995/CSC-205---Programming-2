@@ -1,0 +1,57 @@
+Script started on Wed 09 Sep 2015 11:58:15 PM EDT
+]0;sony_bp@cobra:~/CSC205/Labs/lab3[?1034h[sony_bp@cobra lab3]$ cat bifactorial.java
+import java.util.*;
+import java.math.BigInteger;
+public class bifactorial 
+{
+   public static void main (String [] args)
+   {
+      int value;
+      //  Check that there is a command line parameter
+      if (args.length == 1)
+      {
+         //  Get the corresponding integer or use 7 if the string is badly
+	 //  formatted
+
+	 try 
+	 {
+	    //  Convert the first parameter to an integer
+	    value = Integer.parseInt (args[0]);
+	 }
+	 catch (Exception e)
+	 {
+	    //  If anything goes wrong, use 7
+	    System.err.println ("The integer wasn't recognized, using 7");
+	    value = 7;
+	 }
+      }
+      else  //  There's not one parameter
+      {
+         System.err.println ("You need one command line parameter, using 7.");
+	 value = 7;
+      }
+
+      BigInteger result = fact (value);
+      System.out.println (value + "! = " + result);
+   }
+
+
+   private static BigInteger fact (int n)
+   {
+     BigInteger product = BigInteger.ONE;
+      for (int i = 2; i <= n; i++)
+      {
+         product = product.multiply(BigInteger.valueOf(i));
+      }
+      return product;
+   }
+}
+]0;sony_bp@cobra:~/CSC205/Labs/lab3[sony_bp@cobra lab3]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab3[sony_bp@cobra lab3]$ javac bifactoira[K[K[Krial.java
+]0;sony_bp@cobra:~/CSC205/Labs/lab3[sony_bp@cobra lab3]$ java bifactorial 359
+359! = 11064352561441140772794417601568662317289223904622621392176691022616403474410507993666065774108504124895458559825258433120836936236567571619835401947188041548701080995557939212341482156821940982666459301266757246250772639797528280096713223878619714684787792445634526211406792369392666417716474496596819756812428700694092811830933701024255326152927731377895253879698442084536887778629079695296410229137687188214131541276680673787068159346889477926631302932488189062907430182810944001416919364902319625701993041224445437051774191160099083346045860382903886867783454005991186233875107785036748960508729146793628325128352789004309283598186650249621832386898155481784044278970843136000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+]0;sony_bp@cobra:~/CSC205/Labs/lab3[sony_bp@cobra lab3]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab3[sony_bp@cobra lab3]$ exit
+exit
+
+Script done on Wed 09 Sep 2015 11:58:52 PM EDT

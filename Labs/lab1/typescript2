@@ -1,0 +1,35 @@
+Script started on Mon 24 Aug 2015 02:50:56 PM EDT
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[?1034h[sony_bp@cobra lab1]$ ca [Kt Prog2.java
+//This program will read a string and give its lenth
+//Written by : Bhaumik Sony
+
+import java.util.*;
+class Prog2
+{
+	public static void main(String[] args)
+		{
+		String data;
+
+		System.out.print("Enter a string: ");
+		Scanner stdin = new Scanner(System.in);
+		data = stdin.nextLine();
+
+		System.out.println("The string has " + data.length() + " characters.");
+
+		}
+}
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ javac [KP [K[K Proh[K2.java
+javac: file not found: Pro2.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ javac Prog2.java
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ java Prog1[K2
+Enter a string: He o   i my name is ear   Er arl
+The string has 18 characters.
+]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ clear
+[H[2J]0;sony_bp@cobra:~/CSC205/Labs/lab1[sony_bp@cobra lab1]$ exit
+exit
+
+Script done on Mon 24 Aug 2015 02:51:42 PM EDT

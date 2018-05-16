@@ -1,0 +1,35 @@
+
+This program will accept a user-specified number of integers
+and compute their sum. Input can be terminated before the maximum
+specified inputs are reached by entering a negative value.
+
+Enter maximum number of numbers you want to enter: 
+Enter value 1/200: 
+Enter value 2/200: 
+Enter value 3/200: 
+Enter value 4/200: 
+Enter value 5/200: 
+Enter value 6/200: 
+Enter value 7/200: 
+Enter value 8/200: 
+Enter value 9/200: 
+Enter value 10/200: 
+Enter value 11/200: 
+Enter value 12/200: 
+Enter value 13/200: 
+Enter value 14/200: 
+Enter value 15/200: 
+Enter value 16/200: 
+Enter value 17/200: 
+Enter value 18/200: 
+Enter value 19/200: 
+Enter value 20/200: 
+Enter value 21/200: 
+Enter value 22/200: 
+Enter value 23/200: 
+Enter value 24/200: 
+Enter value 25/200: 
+Enter value 26/200: 
+Enter value 27/200: 
+
+Sum of values: 351.0
